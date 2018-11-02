@@ -1,5 +1,104 @@
+body {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .App {
   text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-fetcher {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  color: white;
+  margin: 1rem;
+  padding: 1rem 3rem;
+  background-color: palevioletred;
+}
+
+.game-container {
+  display: flex;
+  padding: 1rem;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.game-container-img {
+  height: auto;
+  /* width: 400px; */
+  min-width: 300px;
+  margin: 0 1rem;
+  height: 100%;
+}
+
+.game-container-img > img {
+  height: 100%;
+  width: auto;
+}
+
+.loading {
+  font-size: 4rem;
+  animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.game-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.created-at {
+  flex: 1 !important;
+}
+.creator {
+  flex: 1 !important;
+}
+.descrption {
+  flex: 2 !important;
+}
+span {
+  text-align: left;
+}
+p {
+  text-align: left;
+}
+
+.title {
+  width: 100px;
+  margin: 0 1rem 0 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.flexed {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  color: white;
 }
 
 .App-logo {
